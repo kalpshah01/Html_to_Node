@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - E-Commerce Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/images/logo.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+  Sk crafts
+    </a>
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/aboutus">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/review">Review</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/product">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cart">Cart <span id="cart-count">(0)</span></a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" onsubmit="return false;" id="search">
+          <input type="search" onkeyup="searchProducts(this.value)" placeholder="Search here">
+          <i class="bi bi-search" style="color: white;">Search</i>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-4">Customer Reviews</h1>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Very nice products Good quality and fast delivery</p>
+            ~ Vinay Jain 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">I like the craftsmanship Will buy more items</p>
+            ~ Sanjay Mali 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Good customer service Products are as shown</p>
+            ~ Rahul Sharma 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Nice gift for my family Everyone liked it</p>
+            ~ Kalp Shah 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Value for money Happy with the purchase</p>
+            ~ Shah Kalp 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Beautiful designs Unique and handmade</p>
+            ~ Shah rahul 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Quick shipping Received in good condition</p>
+            ~ Rajesh jain 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Good packaging No damage during transit</p>
+            ~ Kavita Joshi 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Recommend to friends Quality is excellent</p>
+            ~ Vikram Rana 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+   <footer class="bg-dark text-light mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>E-Commerce Store</h5>
+                    <p>Your one-stop shop for all your needs.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                      <ul class="list-unstyled">
+                        <li><a href="/" class="text-light">Home</a></li>
+                        <li><a href="/product" class="text-light">Products</a></li>
+                        <li><a href="/abouts" class="text-light">About Us</a></li>
+                        <li><a href="/review" class="text-light">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <p>Email:kalpshah962005@gmail.com</p>
+                    <p>Phone:9408417561</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2026 E-Commerce Store All rights reserved By Kalp Shah</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

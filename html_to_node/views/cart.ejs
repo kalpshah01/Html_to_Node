@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+
+  
+<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/images/logo.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+  Sk crafts
+    </a>
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/aboutus">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/review">Review</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/product">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cart">Cart</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" onsubmit="return false;" id="search">
+          <input type="search" onkeyup="searchProducts(this.value)" placeholder="Search here">
+          <i class="bi bi-search" style="color: white;">Search</i>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+  <main class="flex-grow-1">
+<div class="container mt-4">
+    <h2>Your Cart</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+    </table>
+
+    <h4 id="grand-total"></h4>
+</div>
+</main>
+     <footer class="bg-dark text-light mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>E-Commerce Store</h5>
+                    <p>Your one-stop shop for all your needs.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                       <ul class="list-unstyled">
+                        <li><a href="/" class="text-light">Home</a></li>
+                        <li><a href="/product" class="text-light">Products</a></li>
+                        <li><a href="/abouts" class="text-light">About Us</a></li>
+                        <li><a href="/review" class="text-light">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <p>Email:kalpshah962005@gmail.com</p>
+                    <p>Phone:9408417561</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2026 E-Commerce Store All rights reserved By Kalp Shah</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="/js/cart.js"></script>
+
+
+</body>
+</html>
